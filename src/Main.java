@@ -28,7 +28,7 @@ public class Main {
 		boolean num = false;
 		String count = "";
 		
-		while((line = br.readLine()) != null) {
+		if((line = br.readLine()) != null) {
 			line = line.trim();
 			for (int i = 0; i < line.length(); i++) {
 				if(line.charAt(i)==',' || line.charAt(i)==' ' ) num = false;
@@ -47,6 +47,11 @@ public class Main {
 				}
 			}
 			line="";
+		}
+		while((line = br.readLine()) != null){
+			vetor.add(""+line);
+					
+						
 		}
 		for(String s: vetor){
 			System.out.print(s);
